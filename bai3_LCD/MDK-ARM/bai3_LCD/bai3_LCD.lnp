@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"bai3_lcd\startup_stm32f103xb.o"
+"bai3_lcd\main.o"
+"bai3_lcd\stm32f1xx_it.o"
+"bai3_lcd\stm32f1xx_hal_msp.o"
+"bai3_lcd\lcd16x2.o"
+"bai3_lcd\stm32f1xx_hal_gpio_ex.o"
+"bai3_lcd\stm32f1xx_hal.o"
+"bai3_lcd\stm32f1xx_hal_rcc.o"
+"bai3_lcd\stm32f1xx_hal_rcc_ex.o"
+"bai3_lcd\stm32f1xx_hal_gpio.o"
+"bai3_lcd\stm32f1xx_hal_dma.o"
+"bai3_lcd\stm32f1xx_hal_cortex.o"
+"bai3_lcd\stm32f1xx_hal_pwr.o"
+"bai3_lcd\stm32f1xx_hal_flash.o"
+"bai3_lcd\stm32f1xx_hal_flash_ex.o"
+"bai3_lcd\stm32f1xx_hal_exti.o"
+"bai3_lcd\system_stm32f1xx.o"
+--strict --scatter "bai3_LCD\bai3_LCD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "bai3_LCD.map" -o bai3_LCD\bai3_LCD.axf
